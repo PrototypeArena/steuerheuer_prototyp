@@ -1,0 +1,107 @@
+[33mcommit 9faf76137d146389466912522cb4f5dc3c2b86f5[m[33m ([m[1;36mHEAD -> [m[1;32mchroma_db/instanz/initialisieren[m[33m)[m
+Author: fawzi-ai <fawziai@outlook.com>
+Date:   Sun Dec 28 15:07:44 2025 +0100
+
+    feat(vectorstore): ChromaDB-Instanz und Module implementiert
+    
+    Aufgabe 3.1 abgeschlossen:
+    - src/config.py: Zentrale Konfiguration (Pfade, Modelle, Parameter)
+    - src/vectorstore.py: ChromaDB-Operationen (CRUD, Retriever, Search)
+    - chroma_db/: Persistentes Verzeichnis mit Collection ustg_vectors
+    - Distanzmetrik: Cosine Similarity (HNSW)
+    
+    Quellen: Buch S. 115-117, Aufgabenliste S. 12-13
+
+[33mcommit 6a00d0ee5c94188d837a0208da8ff80bb657fb6a[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m
+Author: fawzi-ai <fawziai@outlook.com>
+Date:   Sun Dec 28 14:19:19 2025 +0100
+
+    added uuid/token_count/metadaten
+
+[33mcommit 6885465e9d3ee84d8b72c10f4d51a6c0a59e0877[m
+Author: fawzi-ai <fawziai@outlook.com>
+Date:   Sun Dec 28 14:15:08 2025 +0100
+
+    feat(parser): XML-Parser v2.2 mit vollstaendigen Metadaten
+    
+    - Erweitert parse_ustg.py auf Version 2.2
+    
+    - Neue Metadaten: full_reference, chunk_id (UUID), token_count
+    
+    - Praezise Token-Zaehlung mit tiktoken (gpt-4o-mini)
+    
+    - full_reference Format:  (UStG § X Abs. Y) / (UStG § X Nr. Y)
+    
+    - Ergebnis: 516 Documents, 84.929 Tokens, 164 Tokens/Doc Durchschnitt
+    
+    - Aufgabe 2.3 (Metadaten anreichern) abgeschlossen
+
+[33mcommit 25440b587ef2a1457b5a91dc0d52d2e15e15c011[m[33m ([m[1;32mdata/chunking[m[33m)[m
+Merge: c91b872 53048cb
+Author: Fawzi-AI <fawziai@outlook.com>
+Date:   Sun Dec 28 12:01:02 2025 +0100
+
+    Merge pull request #2 from Fawzi-AI/data/chunking
+    
+    ## Beschreibung
+    Implementierung von Phase 2 (Dokumentenverarbeitung) des RAG-Prototyps.
+    
+    ## Aenderungen
+    ### Neues Skript: `scripts/parse_ustg.py` (v2.1)
+    - Parst UStG XML von gesetze-im-internet.de
+    - Intelligente Erkennung von Listen- vs. Normal-Paragraphen
+    - Token-basierte Splitting-Logik (Schwelle: 1000 Tokens)
+    
+    ### Ergebnisse
+    | Metrik | Wert |
+    |--------|------|
+    | Paragraphen | 83 |
+    | Abschnitte | 7 |
+    | Documents | 516 |
+    | § 4 (vorher) | 1 Doc, 8650 Tokens |
+    | § 4 (nachher) | 39 Docs, semantisch korrekt |
+    
+    ### Beibehaltene Listen-Paragraphen (< 1000 Tokens)
+    - § 4b, § 18b, § 18c, § 18e, § 20, § 22c
+    
+    ## Referenzen
+    - Aufgabe 2.1: XML-Parser entwickeln
+    - Aufgabe 2.2: Chunking-Strategie implementieren
+    - Buch: "Generative AI with LangChain" S. 130-137
+
+[33mcommit 53048cbdac8b12b27359f47eae1cf7ccfd0ca5c8[m[33m ([m[1;31morigin/data/chunking[m[33m)[m
+Author: fawzi-ai <fawziai@outlook.com>
+Date:   Sun Dec 28 11:58:33 2025 +0100
+
+    feat(parser): UStG XML Parser v2.1 mit intelligentem Listen-Splitting
+    
+    - Implementiert XML-Parsing auf Absatz-Ebene (<P>-Elemente)
+    - Erkennt automatisch Listen-Paragraphen (DL/DT/DD Struktur)
+    - Token-basierte Schwelle (>1000) fuer Splitting-Entscheidung
+    - § 4 wird in 39 semantische Einheiten aufgeteilt (vorher 8650 Tokens)
+    - Kleine Listen-Paragraphen (§4b, §18b, etc.) bleiben als Ganzes
+    - Extrahiert Metadaten: gesetz, abschnitt, paragraph, titel, absatz
+    - Output: 516 Documents in ustg_documents.json
+    
+    Basiert auf: LangChain Buch S. 130-137 (Document Loaders, Chunking)
+
+[33mcommit c91b8721b6ccad3c62f6fdafd45014f37391e473[m
+Merge: 3f299b3 836d310
+Author: Fawzi-AI <fawziai@outlook.com>
+Date:   Sat Dec 27 09:57:04 2025 +0100
+
+    Merge pull request #1 from Fawzi-AI/data/parsing
+    
+    xml zu json kovertiert
+
+[33mcommit 836d310e355f2907e6035684c7ec3d031155ed90[m[33m ([m[1;31morigin/data/parsing[m[33m, [m[1;32mdata/parsing[m[33m)[m
+Author: fawzi-ai <fawziai@outlook.com>
+Date:   Sat Dec 27 09:54:09 2025 +0100
+
+    xml zu json kovertiert
+
+[33mcommit 3f299b32df4b234e78d97994b68efa6a65b8fec4[m
+Author: fawzi-ai <fawziai@outlook.com>
+Date:   Sat Dec 27 06:48:24 2025 +0100
+
+    first commit
