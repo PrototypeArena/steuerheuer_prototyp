@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "source_file": "umsatzsteuergesetz.xml",
+    "parsed_at": "2025-12-28T13:56:25.591147",
+    "parser_version": "2.2",
+    "total_documents": 516,
+    "total_tokens": 84929,
+    "avg_tokens_per_doc": 164,
+    "max_tokens": 1406,
+    "min_tokens": 1,
+    "granularity": "absatz_und_nummer",
+    "min_tokens_for_split": 1000,
+    "tiktoken_model": "gpt-4o-mini"
+  },
+  "documents": [
+    {
+      "page_content": "(1) Der Umsatzsteuer unterliegen die folgenden Umsätze: 1.die Lieferungen und sonstigen Leistungen, die ein Unternehmer im Inland gegen Entgelt im Rahmen seines Unternehmens ausführt. Die Steuerbarkeit entfällt nicht, wenn der Umsatz auf Grund gesetzlicher oder behördlicher Anordnung ausgeführt wird oder nach gesetzlicher Vorschrift als ausgeführt gilt;2.(weggefallen)3.(weggefallen)4.die Einfuhr von Gegenständen im Inland oder in den österreichischen Gebieten Jungholz und Mittelberg (Einfuhrumsatzsteuer);5.der innergemeinschaftliche Erwerb im Inland gegen Entgelt.",
+      "metadata": {
+        "gesetz": "UStG",
+        "abschnitt": "Steuergegenstand und Geltungsbereich",
+        "paragraph": "§ 1",
+        "titel": "Steuerbare Umsätze",
+        "absatz": "1",
+        "full_reference": "UStG § 1 Abs. 1",
+        "chunk_id": "1b6fa671-15af-4046-8196-3ba89a5bd19f",
+        "token_count": 131
+      }
+    },
+    {
+      "page_content": "(1a) Die Umsätze im Rahmen einer Geschäftsveräußerung an einen anderen Unternehmer für dessen Unternehmen unterliegen nicht der Umsatzsteuer. Eine Geschäftsveräußerung liegt vor, wenn ein Unternehmen oder ein in der Gliederung eines Unternehmens gesondert geführter Betrieb im Ganzen entgeltlich oder unentgeltlich übereignet oder in eine Gesellschaft eingebracht wird. Der erwerbende Unternehmer tritt an die Stelle des Veräußerers.",
+      "metadata": {
+        "gesetz": "UStG",
+        "abschnitt": "Steuergegenstand und Geltungsbereich",
+        "paragraph": "§ 1",
+        "titel": "Steuerbare Umsätze",
+        "absatz": "1a",
+        "full_reference": "UStG § 1 Abs. 1a",
+        "chunk_id": "9fba1c93-bc18-41ac-a089-3ec01b2f3aa0",
+        "token_count": 98
+      }
+    }
