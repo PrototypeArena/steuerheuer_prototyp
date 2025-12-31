@@ -2,7 +2,7 @@
 
 # Steuerheuer: RAG-basierter UStG-Assistent ⚖️🤖
 
-> **Ein fortschrittliches Retrieval-Augmented Generation (RAG) System, das komplexe deutsche Umsatzsteuergesetze (UStG) durch KI zugänglich macht. Entwickelt mit Fokus auf präzise Quellenangaben, Konversationsgedächtnis und einer robusten XML-Datenpipeline.**
+> **Ein produktionsnaher RAG-Prototyp, der das deutsche Umsatzsteuergesetz (UStG) intelligent zugänglich macht. Angetrieben von OpenAI, LangGraph und ChromaDB, demonstriert dieses System den entscheidenden Schritt vom Konzept zur marktreifen Anwendung: Mit robustem Konversationsgedächtnis, präziser Datenverarbeitung und verlässlichen Quellenangaben.**
 
 ---
 
@@ -210,6 +210,7 @@ Dieses Projekt ist unter der **MIT Lizenz** veröffentlicht und komplett kostenl
 ---
 
 *Disclaimer: Dieses Tool dient zu Demonstrationszwecken. Die Antworten stellen keine rechtlich bindende Steuerberatung dar.*
+
 
 
 
