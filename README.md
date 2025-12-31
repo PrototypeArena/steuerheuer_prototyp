@@ -1,8 +1,4 @@
-Dies ist ein Entwurf für eine **professionelle, technische und beeindruckende README.md** auf Deutsch. Sie ist strategisch so aufgebaut, dass sie sowohl HR-Manager (durch klare Struktur und Business-Value) als auch technische Leiter (durch Tiefe in Architektur, Code-Entscheidungen und Reflexion) anspricht.
 
-Ich habe Diagramme (Mermaid-Syntax) integriert, um den Workflow zu visualisieren, und spezielle Abschnitte eingefügt, die deine End-to-End-Verantwortung und strategische Entscheidungen hervorheben.
-
----
 
 # Steuerheuer: RAG-basierter UStG-Assistent ⚖️🤖
 
@@ -214,6 +210,7 @@ Dieses Projekt ist unter der **MIT Lizenz** veröffentlicht und komplett kostenl
 ---
 
 *Disclaimer: Dieses Tool dient zu Demonstrationszwecken. Die Antworten stellen keine rechtlich bindende Steuerberatung dar.*
+
 
 
 
