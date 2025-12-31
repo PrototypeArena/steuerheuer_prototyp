@@ -13,17 +13,15 @@ Ich habe Diagramme (Mermaid-Syntax) integriert, um den Workflow zu visualisieren
 ## 📋 Inhaltsverzeichnis
 
 1. Über das Projekt
-2. [Architektur & Workflow]
-3. [Technische Tiefenanalyse](https://www.google.com/search?q=%23-technische-tiefenanalyse)
-* [Datenaufbereitung & Parsing](https://www.google.com/search?q=%231-datenaufbereitung--xml-parsing-strategie)
-* [Vektorsuche & Embeddings](https://www.google.com/search?q=%232-vektorsuche--embeddings)
-* [State-Management mit LangGraph](https://www.google.com/search?q=%233-state-management-mit-langgraph)
-
-
-4. [Herausforderungen & Entscheidungen](https://www.google.com/search?q=%23-herausforderungen--entscheidungen-pros--cons)
-5. [Projektmanagement & Ownership](https://www.google.com/search?q=%23-projektmanagement--ownership)
-6. [Installation & Nutzung](https://www.google.com/search?q=%23-installation--nutzung)
-7. [Lizenz & "Bezahlung"](https://www.google.com/search?q=%23-lizenz--bezahlung)
+2. Architektur & Workflow
+3. Technische Tiefenanalyse
+   * **Datenaufbereitung & Parsing**
+   * **Vektorsuche & Embeddings**
+   * **State-Management mit LangGraph**
+4. Herausforderungen & Entscheidungen
+5. Projektmanagement & Ownership
+6. Installation & Nutzung
+7. Lizenz & "Bezahlung"
 
 ---
 
@@ -216,5 +214,6 @@ Dieses Projekt ist unter der **MIT Lizenz** veröffentlicht und komplett kostenl
 ---
 
 *Disclaimer: Dieses Tool dient zu Demonstrationszwecken. Die Antworten stellen keine rechtlich bindende Steuerberatung dar.*
+
 
 
