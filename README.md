@@ -204,12 +204,13 @@ python scripts/cli_v2.py
 
 Dieses Projekt ist unter der **MIT Lizenz** veröffentlicht und komplett kostenlos nutzbar.
 
-1. ⭐ ** Gib bitte diesem Repository einen Stern** oben rechts.
+1. ⭐ **Gib bitte diesem Repository einen Stern** oben rechts.
 2. 💬 **Sende mir Feedback:** Hast du einen Bug gefunden oder eine Idee? Schreib mir eine E-Mail oder öffne ein Issue. Feedback ist der Treibstoff für Verbesserung.
 
 ---
 
 *Disclaimer: Dieses Tool dient zu Demonstrationszwecken. Die Antworten stellen keine rechtlich bindende Steuerberatung dar.*
+
 
 
 
